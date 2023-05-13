@@ -1,0 +1,81 @@
+.input {
+  width: 90%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.input__box {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+
+.input__box:focus {
+  box-shadow: 0 0 10px 100px rgb(0, 0, 0);
+  outline: none;
+}
+
+.input_submit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0px;
+  border-radius: 50px;
+  margin: 12px;
+  border: none;
+  font-size: 15px;
+  background-color: #2f74c0;
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 0 0 4px black;
+}
+
+.input_submit:hover {
+  background-color: #388ae2;
+}
+
+.input_submit:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
+
+.todo__lists {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 15px;
+  width: 90%;
+  background-color: rgb(169, 157, 157);
+  border-radius: 40px;
+  color: white;
+  font-size: 18px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-right: 10px;
+}
+
+.icons > .trash:hover {
+  transform: scale(1.4);
+}
+.icons > .done:hover {
+  transform: scale(1.4);
+}
+
+.is__done {
+  text-decoration: line-through;
+}
